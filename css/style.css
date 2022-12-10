@@ -1,0 +1,271 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  --hero-color: #2f303a;
+  --white-color: #ffffff;
+  --background-color: #e5e5e5;
+  --black-color: #212121;
+  --blu-color: #2196f3;
+  --grey-color: #757575;
+  --footer-color: rgba(255, 255, 255, 0.6);
+}
+body {
+  margin: 0;
+
+  font-family: roboto, sans-serif;
+
+  background: var(--white-color);
+  color: var(--black-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+p {
+  color: var(--grey-color);
+}
+h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* header - голова */
+/* logo - логотип */
+.logo {
+  font-family: raleway, sans-serif;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--black-color);
+}
+.span {
+  color: var(--blu-color);
+}
+/* navigatuon - навигация */
+.main-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-navigation {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+}
+.auth-navigation .link {
+  margin-right: 50px;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-family: "Roboto";
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.link:last-child {
+  margin-right: 0px;
+}
+/* adress - адресс */
+.adress {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+
+  display: flex;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.adress-link:first-child {
+  margin-right: 50px;
+}
+.adress-link > a {
+  color: var(--grey-color);
+}
+.adress-link > a:hover,
+.adress-link > a:focus {
+  color: var(--blu-color);
+}
+
+/* hero - герой */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+
+  color: var(--white-color);
+  background: var(--hero-color);
+}
+.hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* description - описание */
+.description {
+  display: flex;
+}
+.description-item {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
+/* feature */
+
+.description-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* заголовок */
+.title {
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+.hidden {
+  font-size: 0px;
+  width: 0px;
+  height: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* кнопка */
+.button {
+  padding: 10px 32px;
+  border: 0px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  font-family: inherit;
+  cursor: pointer;
+
+  color: var(--white-color);
+  background-color: var(--blu-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* футер */
+.footer {
+  margin-top: 50px;
+}
+.footer > a {
+  font-family: raleway, sans-serif;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.footer-logo {
+  color: var(--blu-color);
+}
+
+.footer-adress > a {
+  font-style: normal;
+
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--footer-color);
+}
+.location {
+  color: var(--white-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* portfolio */
+
+/* filter-button */
+
+.filter-button {
+  font-family: inherit;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  background: var(--white-color);
+  border-radius: 4px;
+
+  margin-right: 8px;
+  padding: 6px 22px;
+  border: 0px;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--blu-color);
+  color: var(--white-color);
+}
+.filter-button:last-child {
+  margin: 0;
+}
+/* card */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-item {
+  margin-right: 30px;
+}
