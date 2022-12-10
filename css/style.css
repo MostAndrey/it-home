@@ -8,6 +8,7 @@ html {
   box-sizing: inherit;
 }
 :root {
+  --team-color: #f5f4fa;
   --hero-color: #2f303a;
   --white-color: #ffffff;
   --background-color: #e5e5e5;
@@ -214,6 +215,7 @@ h3 {
 }
 
 /* Pictures h2 заголовок */
+
 .pictures {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -230,6 +232,48 @@ h3 {
 }
 .pictures-list:last-child {
   margin-right: 0px;
+}
+/* team - команда */
+
+.section-team {
+  background-color: var(--team-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-team > title {
+  padding-top: 94px;
+}
+.team-description {
+  padding-top: 50px;
+
+  display: flex;
+  justify-content: center;
+}
+.team {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  padding: 0px;
+  margin-right: 30px;
+
+  text-align: center;
+
+  background: var(--white-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team:last-child {
+  margin-right: 0px;
+}
+.team-names {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.team-paragraph {
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 /* футер */
 .footer {
