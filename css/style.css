@@ -8,6 +8,7 @@ html {
   box-sizing: inherit;
 }
 :root {
+  --footer-bg-color: #2f303a;
   --team-color: #f5f4fa;
   --hero-color: #2f303a;
   --white-color: #ffffff;
@@ -275,45 +276,63 @@ h3 {
   margin-top: 0px;
   margin-bottom: 30px;
 }
-/* футер */
+/* footer - нижний колонтитул */
 .footer {
-  margin-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--footer-bg-color);
 }
-.footer > a {
+.footer-description > a {
   font-family: raleway, sans-serif;
 
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
   color: var(--white-color);
 }
 .footer-logo {
   color: var(--blu-color);
 }
-
-.footer-adress > a {
+.footer-address {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.address-list {
+  margin-top: 9px;
+}
+.address-list > a {
   font-style: normal;
 
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
 
   color: var(--footer-color);
 }
 .location {
-  color: var(--white-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
 
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  color: var(--white-color);
 }
+/* pages 2 */
 /* portfolio */
 
 /* filter-button */
-
+.filter {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  text-align: center;
+}
 .filter-button {
   font-family: inherit;
   cursor: pointer;
@@ -323,8 +342,11 @@ h3 {
   line-height: 1.62;
   letter-spacing: 0.03em;
 
-  background: var(--white-color);
+  background: var(--team-color);
+
   border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 
   margin-right: 8px;
   padding: 6px 22px;
@@ -339,10 +361,50 @@ h3 {
   margin: 0;
 }
 /* card */
+.filter-card {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .card {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   display: flex;
   flex-wrap: wrap;
 }
-.card-item {
+.card-list {
   margin-right: 30px;
+  margin-bottom: 30px;
+}
+.card-list:nth-child(3n) {
+  margin-right: 0px;
+}
+.card-title {
+  margin: 20px 24px 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--black-color);
+}
+.card-paragraph {
+  margin: 0px 24px 20px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.03em;
+
+  color: var(--grey-color);
+}
+.card-border {
+  margin-top: -5px;
+
+  background: var(--white-color);
+  border: 1px solid #eeeeee;
 }
