@@ -53,6 +53,7 @@ h3 {
 /* header - голова */
 /* logo - логотип */
 .logo {
+  margin-right: 93px;
   font-family: raleway, sans-serif;
 
   font-weight: 700;
@@ -65,35 +66,43 @@ h3 {
 .span {
   color: var(--blu-color);
 }
-/* navigatuon - навигация */
 .main-navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .site-navigation {
-  padding: 0px;
-  margin: 0px;
   display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
-.auth-navigation .link {
-  margin-right: 50px;
-
+.item {
+  margin-left: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
 
-  font-family: "Roboto";
-
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  color: var(--black-color);
 }
-.link:last-child {
-  margin-right: 0px;
+.item:first-child {
+  margin-left: 0px;
+}
+.auth-navigation {
+  margin-left: auto;
+}
+.item .nav:hover,
+.item .nav:focus {
+  color: var(--blu-color);
+}
+.nav.current {
+  color: var(--blu-color);
 }
 /* adress - адресс */
-.adress {
+.auth-navigation {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
@@ -105,14 +114,15 @@ h3 {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.adress-link:first-child {
+.navigation-link:first-child {
   margin-right: 50px;
 }
-.adress-link > a {
+.navigation-link > a {
   color: var(--grey-color);
 }
-.adress-link > a:hover,
-.adress-link > a:focus {
+.navigation-link > a:hover,
+.navigation-link > a:focus {
+  cursor: pointer;
   color: var(--blu-color);
 }
 .title {
@@ -326,11 +336,14 @@ h3 {
 }
 /* pages 2 */
 /* portfolio */
-
+/* hero - герой */
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* filter-button */
 .filter {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   text-align: center;
 }
 .filter-button {
@@ -374,11 +387,16 @@ h3 {
   flex-wrap: wrap;
 }
 .card-list {
+  cursor: pointer;
+
   margin-right: 30px;
   margin-bottom: 30px;
 }
 .card-list:nth-child(3n) {
   margin-right: 0px;
+}
+.card-list:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 .card-title {
   margin: 20px 24px 4px;
@@ -407,4 +425,7 @@ h3 {
 
   background: var(--white-color);
   border: 1px solid #eeeeee;
+}
+.href {
+  cursor: pointer;
 }
